@@ -117,11 +117,11 @@ JPanel buildHeader() {
     p.setBorder(new EmptyBorder(14, 22, 14, 22));
 
     JLabel logo = new JLabel("Jollibee");
-    logo.setFont(new Font("Serif", Font.BOLD, 35));
+    logo.setFont(new Font("Serif", Font.BOLD, 70));
     logo.setForeground(JB_YELLOW);
 
-    JLabel sub = new JLabel("   Order your Jollibee favorites!");
-    sub.setFont(new Font("SansSerif", Font.PLAIN, 15));
+    JLabel sub = new JLabel("Order your Jollibee favorites!");
+    sub.setFont(new Font("SansSerif", Font.PLAIN, 30));
     sub.setForeground(new Color(255, 235, 200));
 
     JPanel left = new JPanel(new GridLayout(2, 1, 0, 2));
@@ -135,7 +135,7 @@ JPanel buildHeader() {
 // ── Menu panel ─────────────────────────────────────────
 JPanel buildMenuPanel() {
     JTabbedPane tabs = new JTabbedPane(JTabbedPane.TOP);
-    tabs.setFont(new Font("SansSerif", Font.BOLD, 12));
+    tabs.setFont(new Font("SansSerif", Font.BOLD, 20));
     tabs.setBackground(JB_CREAM);
 
     Map<String, java.util.List<MenuItem>> menu = buildMenu();
@@ -173,7 +173,7 @@ JPanel buildCard(MenuItem item) {
 
     // Name label
     JLabel nameLabel = new JLabel(item.emoji + "  " + item.name);
-    nameLabel.setFont(new Font("SansSerif", Font.BOLD, 13));
+    nameLabel.setFont(new Font("SansSerif", Font.BOLD, 18));
     nameLabel.setForeground(JB_DARK);
 
     // Price label — use "P" instead of peso unicode to avoid box
@@ -190,7 +190,7 @@ JPanel buildCard(MenuItem item) {
     // Qty spinner
     SpinnerNumberModel spinModel = new SpinnerNumberModel(1, 1, 99, 1);
     JSpinner spinner = new JSpinner(spinModel);
-    spinner.setFont(new Font("SansSerif", Font.PLAIN, 13));
+    spinner.setFont(new Font("SansSerif", Font.PLAIN, 20));
     spinner.setPreferredSize(new Dimension(65, 30));
 
     // ADD button — explicitly painted so it is always visible
@@ -304,7 +304,7 @@ JPanel buildCartPanel() {
 // ── Cart button factory — always visible ───────────────
 JButton makeCartBtn(String text, Color bg) {
     JButton b = new JButton(text);
-    b.setFont(new Font("SansSerif", Font.BOLD, 12));
+    b.setFont(new Font("SansSerif", Font.BOLD, 20));
     b.setBackground(bg);
     b.setForeground(JB_WHITE);
     b.setOpaque(true);
