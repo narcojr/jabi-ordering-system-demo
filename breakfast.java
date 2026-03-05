@@ -41,3 +41,4 @@ class CornedBeef extends Parent {
     double calculateTotalPrice(int quantity) {
         return (cornedBeef + egg + Rice) * quantity;
     }
+}

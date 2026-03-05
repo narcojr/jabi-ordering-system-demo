@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        // =============================================
-        // CHICKENJOY  |  file: Chickenjoy.java
-        // =============================================
+        
+        // CHICKENJOY  
+
         System.out.println("========== CHICKENJOY ==========");
 
         Chickenjoy1pc c1 = new Chickenjoy1pc();
@@ -26,9 +26,9 @@ public class Main {
         System.out.println("Total price (2): " + c4.calculateTotalPrice(2));
         System.out.println();
 
-        // =============================================
-        // BURGERS AND SANDWICHES  |  file: BurgersAndSandwiches.java
-        // =============================================
+        
+        // BURGERS AND SANDWICHES  
+
         System.out.println("========== BURGERS AND SANDWICHES ==========");
 
         Yum y1 = new Yum();
@@ -56,9 +56,9 @@ public class Main {
         System.out.println("Total price (4): " + jh.calculateTotalPrice(4));
         System.out.println();
 
-        // =============================================
-        // NOODLES  |  file: Noodles.java
-        // =============================================
+    
+        // NOODLES  
+      
         System.out.println("========== NOODLES ==========");
 
         JollySpaghetti js1 = new JollySpaghetti();
@@ -81,9 +81,9 @@ public class Main {
         System.out.println("Total price (2): " + pbvm.calculateTotalPrice(2));
         System.out.println();
 
-        // =============================================
-        // RICE MEALS  |  file: RiceMeals.java
-        // =============================================
+        
+        // RICE MEALS  
+        
         System.out.println("========== RICE MEALS ==========");
 
         BurgerSteak1pc bs1 = new BurgerSteak1pc();
@@ -106,9 +106,9 @@ public class Main {
         System.out.println("Total price (1): " + ubs.calculateTotalPrice(1));
         System.out.println();
 
-        // =============================================
-        // BREAKFAST  |  file: Breakfast.java
-        // =============================================
+        
+        // BREAKFAST  
+        
         System.out.println("========== BREAKFAST ==========");
 
         BreakfastSteak bks = new BreakfastSteak();
@@ -136,9 +136,9 @@ public class Main {
         System.out.println("Total price (2): " + cb.calculateTotalPrice(2));
         System.out.println();
 
-        // =============================================
-        // SIDES AND SOUP  |  file: SidesAndSoup.java
-        // =============================================
+       
+        // SIDES AND SOUP 
+        
         System.out.println("========== SIDES AND SOUP ==========");
 
         JollyCrispyFries jcf = new JollyCrispyFries();
@@ -161,14 +161,13 @@ public class Main {
         System.out.println("Total price (3): " + pmp.calculateTotalPrice(3));
         System.out.println();
 
-        Sides sd = new Sides();
+        SidesItem sd = new SidesItem();
         System.out.println("Sides (Mashed Potato / Buttered Corn)");
         System.out.println("Total price (2): " + sd.calculateTotalPrice(2));
         System.out.println();
 
-        // =============================================
-        // DESSERTS AND FLOATS  |  file: DessertsAndFloats.java
-        // =============================================
+        // DESSERTS AND FLOATS
+        
         System.out.println("========== DESSERTS AND FLOATS ==========");
 
         Sundae snd = new Sundae();
