@@ -116,12 +116,12 @@ JPanel buildHeader() {
     p.setBackground(JB_RED);
     p.setBorder(new EmptyBorder(14, 22, 14, 22));
 
-    JLabel logo = new JLabel("** Jollibee");
-    logo.setFont(new Font("Serif", Font.BOLD, 32));
+    JLabel logo = new JLabel("Jollibee");
+    logo.setFont(new Font("Serif", Font.BOLD, 35));
     logo.setForeground(JB_YELLOW);
 
     JLabel sub = new JLabel("   Order your Jollibee favorites!");
-    sub.setFont(new Font("SansSerif", Font.PLAIN, 13));
+    sub.setFont(new Font("SansSerif", Font.PLAIN, 15));
     sub.setForeground(new Color(255, 235, 200));
 
     JPanel left = new JPanel(new GridLayout(2, 1, 0, 2));
@@ -371,7 +371,7 @@ void refreshCart() {
 
 void flash(String msg) {
     statusLabel.setText("  OK  " + msg);
-    Timer t = new Timer(2500, e -> statusLabel.setText(" "));
+    javax.swing.timer t = new javax.swing.timer(2500, e -> statusLabel.setText("")); 
     t.setRepeats(false);
     t.start();
 }
@@ -429,3 +429,11 @@ public static void main(String[] args) {
     SwingUtilities.invokeLater(() -> new Main().setVisible(true));
 }
 }
+//Narco notes:
+//with the knowledge of GUI that a get from the past project I was able to make this version of the program that uses Jframe
+//although the structure and the basic layout of the GUI was made by us we ask claude AI for help to how to add colors
+//to the program.
+//there are part of this program that is new to us just like the use of emoji to the program. we have learn a bit from sir nex
+// on using emoji using ASCII code in the past. but here in java is kinda similar but different code but on how to use is similar
+//this activity really help us to explore more on the OOP and GUI. dicovering the use of colors and emoji to make the
+//program have theme and certain feel to it.  
