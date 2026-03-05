@@ -195,7 +195,7 @@ JPanel buildCard(MenuItem item) {
 
     // ADD button — explicitly painted so it is always visible
     JButton addBtn = new JButton("Add +");
-    addBtn.setFont(new Font("SansSerif", Font.BOLD, 12));
+    addBtn.setFont(new Font("SansSerif", Font.BOLD, 18));
     addBtn.setBackground(JB_RED);
     addBtn.setForeground(JB_WHITE);
     addBtn.setOpaque(true);
@@ -251,13 +251,13 @@ JPanel buildCartPanel() {
 
     // Cart list
     cartList = new JList<>(cartModel);
-    cartList.setFont(new Font("SansSerif", Font.PLAIN, 12));
+    cartList.setFont(new Font("SansSerif", Font.PLAIN, 18));
     cartList.setBackground(new Color(80, 8, 18));
     cartList.setForeground(JB_WHITE);
     cartList.setSelectionBackground(JB_RED);
     cartList.setSelectionForeground(JB_YELLOW);
-    cartList.setBorder(new EmptyBorder(6, 6, 6, 6));
-    cartList.setFixedCellHeight(42);
+    cartList.setBorder(new EmptyBorder(7, 7, 7, 7));
+    cartList.setFixedCellHeight(45);
 
     JScrollPane listScroll = new JScrollPane(cartList);
     listScroll.setBorder(new LineBorder(JB_YELLOW, 1));
@@ -280,7 +280,7 @@ JPanel buildCartPanel() {
     clearBtn.addActionListener(e -> { cart.clear(); refreshCart(); });
 
     JButton orderBtn = makeCartBtn("PLACE ORDER", JB_GREEN);
-    orderBtn.setFont(new Font("SansSerif", Font.BOLD, 14));
+    orderBtn.setFont(new Font("SansSerif", Font.BOLD, 17));
     orderBtn.addActionListener(e -> placeOrder());
 
     JPanel btnPanel = new JPanel(new GridLayout(3, 1, 0, 6));
@@ -334,8 +334,8 @@ JPanel buildStatusBar() {
     statusLabel.setForeground(JB_WHITE);
     bar.add(statusLabel, BorderLayout.WEST);
 
-    JLabel copy = new JLabel("Jollibee OOP System  |  Java Swing GUI");
-    copy.setFont(new Font("SansSerif", Font.PLAIN, 11));
+    JLabel copy = new JLabel("Jollibee OOP System by Narco and Cijay");
+    copy.setFont(new Font("SansSerif", Font.PLAIN, 15));
     copy.setForeground(new Color(255, 210, 210));
     bar.add(copy, BorderLayout.EAST);
     return bar;
